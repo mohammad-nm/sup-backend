@@ -1,8 +1,8 @@
 {
   "name": "sup-backend",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "a backend for sup messenger app",
+  "author": "Mohammad Nickmagham",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
