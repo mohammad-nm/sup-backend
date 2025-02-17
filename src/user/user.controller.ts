@@ -9,6 +9,7 @@ export class UserController {
   async register(
     @Body() body: { username: string; email: string; password: string },
   ) {
+    console.log('(user controller)registering: ', body);
     return this.userService.createUser(
       body.username,
       body.email,
@@ -17,6 +18,7 @@ export class UserController {
   }
   @Get(':email')
   async getUserByEmail(@Param('email') email: string) {
+    console.log('(user controller)email to find: ', email);
     return this.userService.findByEmail(email);
   }
 }
