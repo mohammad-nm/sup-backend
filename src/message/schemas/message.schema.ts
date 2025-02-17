@@ -16,3 +16,5 @@ export class Message {
   @Prop()
   attachments?: string[];
 }
+
+export const MessageSchema = SchemaFactory.createForClass(Message);
